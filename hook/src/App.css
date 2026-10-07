@@ -5,3 +5,13 @@ ul{
   list-style: none;
   padding-left: 0;
 }
+.sign-up{
+  width: 500px;
+  margin: 30px auto;
+}
+.sign-up ul{
+  list-style: none;
+}
+.sign-up ul li{
+  margin: 16px;
+}
