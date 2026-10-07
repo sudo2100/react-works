@@ -1,11 +1,5 @@
 import { useState } from "react";
-
-// 임시 데이터 저장
-const users = [
-    {username: "user1", password: "u1111"},
-    {username: "user2", password: "u2222"},
-    {username: "admin", password: "a0000"},
-]
+import users from "../data/users"
 
 const SignIn = () => {
     const [formData, setFormData] = useState({
@@ -40,6 +34,9 @@ const SignIn = () => {
             user.username === username && user.password === password);
 
         setResult(matched ? "success" : "fail");
+
+        // 입력값 초기화
+        setFormData({username: "", password: ""});
     }
 
 
@@ -72,8 +69,12 @@ const SignIn = () => {
                 </ul>
             </form>
             {/* 결과 메시지 출력 */}
-            {result === "success" && (<p>환영합니다.</p>)}
-            {result === "fail" && (<p>아이디 또는 비밀번호가 일치하지 않습니다.</p>)}
+            {result === "success" && (
+                <p style={{color: "blue"}}>환영합니다.</p>
+            )}
+            {result === "fail" && (
+                <p style={{color: "red"}}>아이디 또는 비밀번호가 일치하지 않습니다.</p>
+            )}
         </div>
     )
 }
