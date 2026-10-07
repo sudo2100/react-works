@@ -30,7 +30,7 @@ const SignUp = () => {
             <form onSubmit={handleSubmit}>
                 <ul>
                     <li>
-                        <label>이름 </label>
+                        <label>이름</label>
                         <input 
                             type="text" 
                             name="name"

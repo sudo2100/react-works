@@ -4,6 +4,7 @@ import Counter from './components/Counter'
 import Drinks from './components/Drinks'
 import InputValue from './components/InputValue'
 import User from './components/User'
+import SignIn from './users/SiginIn'
 import SignUp from './users/SignUp'
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
         {/* <Drinks /> */}
         {/* <Clock /> */}
         {/* <User /> */}
-        <SignUp />
+        {/* <SignUp /> */}
+        <SignIn />
       </div>
     </>
   )
