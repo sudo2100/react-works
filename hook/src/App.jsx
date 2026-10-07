@@ -1,17 +1,21 @@
 import './App.css'
+import Clock from './components/Clock'
 import Counter from './components/Counter'
 import Drinks from './components/Drinks'
 import InputValue from './components/InputValue'
+import User from './components/User'
 
 function App() {
 
   return (
     <>
       <div className='app'>
-        <h2>리엑트 상태 관리</h2>
+        {/* <h2>리엑트 상태 관리</h2> */}
         {/* <Counter /> */}
         {/* <InputValue /> */}
-        <Drinks />
+        {/* <Drinks /> */}
+        {/* <Clock /> */}
+        <User />
       </div>
     </>
   )
